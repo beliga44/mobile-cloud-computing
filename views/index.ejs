@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home Page</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="stylesheet" href="/stylesheets/themes/Post.min.css" />
+  <link rel="stylesheet" href="/stylesheets/themes/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<!--Main Body-->
+<div data-role="page">
+    <div data-role="header">
+        <h1>Home Page</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+        <p>Register</p>
+        <form action="/doLogin" method="post" data-ajax="false">
+            <input placeholder="Username/email" type="text" name="credential" id="">
+            <input placeholder="Password" type="password" name="password" id="">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+
+    </div>
+
+    <div data-role="footer">
+        Post Training
+    </div>
+</div>
+</body>
+</html>
